@@ -96,37 +96,36 @@ const App = () => {
 
   return (
     <div className="container">
-     
       <div className="front">
-      <header className="hero">
-        <div className="hero-content">
-          <h1 className="hero-title">TechSpira Internships</h1>
-          <p className="hero-text">
-            Join our dynamic team and kickstart your career with hands-on
-            experience in cutting-edge technology projects.
-          </p>
-        </div>
-      </header>
+        <header className="hero">
+          <div className="hero-content">
+            <h1 className="hero-title">TechSpira Internships</h1>
+            <p className="hero-text">
+              Join our dynamic team and kickstart your career with hands-on
+              experience in cutting-edge technology projects.
+            </p>
+          </div>
+        </header>
 
-      <section className="card">
-        <h2 className="heading">About TechSpira</h2>
-        <p>
-        TechSpira is a leading technology company focused on innovative
-        solutions in software development, machine learning, and data
-        analytics. With over 10 years of experience, we&apos;ve helped
-        countless interns grow into successful tech professionals.
-        At TechSpira, we believe in nurturing future talent. Our internship
-        programs are designed to provide hands-on experience, bridging
-        academic learning with real-world challenges. Under the leadership of
-        our visionary directors, Bandu Vinodh Naidu and Vinutha Bandu, we
-        strive to create an environment where creativity meets technology,
-        empowering both organizations and aspiring professionals to excel.
-        With a robust foundation, a team of 50–100 dedicated professionals,
-        and an unwavering commitment to quality, TechSpira Technologies is not
-        just a company—it’s a launchpad for technological innovation and
-        professional growth.
-        </p>
-      </section>
+        <section className="card">
+          <h2 className="heading">About TechSpira</h2>
+          <p>
+            TechSpira is a leading technology company focused on innovative
+            solutions in software development, machine learning, and data
+            analytics. With over 10 years of experience, we&apos;ve helped
+            countless interns grow into successful tech professionals. At
+            TechSpira, we believe in nurturing future talent. Our internship
+            programs are designed to provide hands-on experience, bridging
+            academic learning with real-world challenges. Under the leadership
+            of our visionary directors, Bandu Vinodh Naidu and Vinutha Bandu, we
+            strive to create an environment where creativity meets technology,
+            empowering both organizations and aspiring professionals to excel.
+            With a robust foundation, a team of 50–100 dedicated professionals,
+            and an unwavering commitment to quality, TechSpira Technologies is
+            not just a company—it’s a launchpad for technological innovation and
+            professional growth.
+          </p>
+        </section>
       </div>
 
       {/* Domains Section */}
@@ -147,7 +146,7 @@ const App = () => {
         <h2 className="heading">Apply Now</h2>
         <p>Fill out the form below to apply for our internship program</p>
         <form
-          action="https://formsubmit.co/rajesh@techspira.co.in"
+          action="https://formsubmit.co/enasup@techspira.co.in"
           method="POST"
           encType="multipart/form-data"
         >
