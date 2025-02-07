@@ -28,10 +28,7 @@ body {
   border-radius: 12px;
   margin-bottom: 1rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.hero {
-  z-index: 2; /* Ensure it stacks above other content */
+  z-index: 2;
 }
 
 .hero-title {
@@ -55,8 +52,8 @@ body {
   background: white;
   border-radius: 16px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  position: relative; /* Ensure stacking respects z-index */
-  z-index: 1; /* Set stacking order */
+  position: relative;
+  z-index: 1;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -187,11 +184,11 @@ form {
   }
 
   .front {
-    height: auto; /* Allow content to adjust height */
-    margin-bottom: 3rem; /* Ensure spacing below */
+    height: auto; 
+    margin-bottom: 3rem; 
   }
 
   .domains-grid {
-    gap: 1rem; /* Reduce gap for smaller screens */
+    gap: 1rem;
   }
 }
