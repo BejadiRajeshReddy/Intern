@@ -1,6 +1,15 @@
 import "./App.css";
 
 const App = () => {
+  const ArrowDown = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 5v14M19 12l-7 7-7-7"/>
+    </svg>
+  );
+  
+  const scrollToForm = () => {
+    document.querySelector('#apply-form').scrollIntoView({ behavior: 'smooth' });
+  };
   const domains = [
     {
       name: "Full-Stack Development",
@@ -104,6 +113,10 @@ const App = () => {
               Join our dynamic team and kickstart your career with hands-on
               experience in cutting-edge technology projects.
             </p>
+            <button onClick={scrollToForm}>
+            Apply Now
+            <ArrowDown />
+            </button>
           </div>
         </header>
 
@@ -128,7 +141,6 @@ const App = () => {
         </section>
       </div>
 
-      {/* Domains Section */}
       <section className="card">
         <h2 className="heading">Our Domains</h2>
         <div className="domains-grid">
@@ -141,8 +153,7 @@ const App = () => {
         </div>
       </section>
 
-      {/* Registration Form Section */}
-      <section className="card">
+      <section id="apply-form" className="card">
         <h2 className="heading">Apply Now</h2>
         <p>Fill out the form below to apply for our internship program</p>
         <form
