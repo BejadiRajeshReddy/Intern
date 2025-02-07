@@ -28,43 +28,9 @@ const App = () => {
       description: "Build next-gen applications and services",
     },
     {
-      name: "Machine Learning",
-      description: "Work on cutting-edge AI solutions",
-    },
-    {
-      name: "Data Analytics",
-      description: "Transform data into business insights",
-    },
-    {
       name: "Cloud Computing (AWS, Azure, Google Cloud)",
       description:
         "Leverage cloud platforms for scalable and reliable solutions",
-    },
-    {
-      name: "Cybersecurity",
-      description: "Protect systems, networks, and data from cyber threats",
-    },
-    {
-      name: "Data Science & Analytics",
-      description: "Extract insights from data to drive business decisions",
-    },
-    {
-      name: "Machine Learning & AI",
-      description: "Create intelligent systems that learn and adapt",
-    },
-    {
-      name: "Blockchain Development",
-      description: "Develop decentralized applications and smart contracts",
-    },
-    {
-      name: "IoT (Internet of Things)",
-      description:
-        "Connect and manage smart devices for enhanced functionality",
-    },
-    {
-      name: "Big Data Engineering",
-      description:
-        "Process and analyze large datasets for business intelligence",
     },
     {
       name: "UI/UX Design",
@@ -76,30 +42,12 @@ const App = () => {
       description: "Automate workflows and improve software delivery processes",
     },
     {
-      name: "AR/VR Development",
-      description: "Create immersive augmented and virtual reality experiences",
-    },
-    {
-      name: "Game Development",
-      description: "Design and develop interactive video games",
-    },
-    {
       name: "Networking & IT Support",
       description: "Ensure seamless IT infrastructure and troubleshooting",
     },
     {
       name: "Database Management & SQL",
       description: "Manage and query databases for data-driven applications",
-    },
-    {
-      name: "Quality Assurance & Testing (Manual & Automation)",
-      description:
-        "Test software to ensure quality, performance, and reliability",
-    },
-    {
-      name: "Digital Marketing (SEO, SEM, Social Media, Content Marketing)",
-      description:
-        "Promote brands and drive online traffic through various digital channels",
     },
   ];
 
@@ -157,9 +105,10 @@ const App = () => {
         <h2 className="heading">Apply Now</h2>
         <p>Fill out the form below to apply for our internship program</p>
         <form
-          action="https://formsubmit.co/enasup@techspira.co.in"
+          action="https://formsubmit.co/rockyrocky9526@gmail.com"
           method="POST"
           encType="multipart/form-data"
+          acceptCharset="UTF-8"
         >
           <div className="form-grid">
             <div className="form-group">
@@ -190,7 +139,7 @@ const App = () => {
                 className="input"
                 type="tel"
                 name="phone"
-                placeholder="+1 (555) 000-0000"
+                placeholder="+91 9201 000-000"
                 required
               />
             </div>
@@ -209,7 +158,7 @@ const App = () => {
 
             <div className="form-group full-width">
               <label className="label">Resume</label>
-              <input className="input" type="file" accept=".pdf,.doc,.docx" />
+              <input className="input" type="file" name="attachment" accept=".pdf,.doc,.docx" required/>
               <small className="small">Accepted formats: PDF, DOC, DOCX</small>
             </div>
           </div>
