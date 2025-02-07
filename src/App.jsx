@@ -2,13 +2,25 @@ import "./App.css";
 
 const App = () => {
   const ArrowDown = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M12 5v14M19 12l-7 7-7-7"/>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M12 5v14M19 12l-7 7-7-7" />
     </svg>
   );
-  
+
   const scrollToForm = () => {
-    document.querySelector('#apply-form').scrollIntoView({ behavior: 'smooth' });
+    document
+      .querySelector("#apply-form")
+      .scrollIntoView({ behavior: "smooth" });
   };
   const domains = [
     {
@@ -62,8 +74,8 @@ const App = () => {
               experience in cutting-edge technology projects.
             </p>
             <button onClick={scrollToForm}>
-            Apply Now
-            <ArrowDown />
+              Apply Now
+              <ArrowDown />
             </button>
           </div>
         </header>
@@ -110,6 +122,9 @@ const App = () => {
           encType="multipart/form-data"
           acceptCharset="UTF-8"
         >
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_subject" value="TechSpira Internship Application" />
+          
           <div className="form-grid">
             <div className="form-group">
               <label className="label">Full Name</label>
@@ -158,7 +173,13 @@ const App = () => {
 
             <div className="form-group full-width">
               <label className="label">Resume</label>
-              <input className="input" type="file" name="Resume" accept=".pdf,.doc,.docx" required/>
+              <input
+                className="input"
+                type="file"
+                name="Resume"
+                accept=".pdf,.doc,.docx"
+                required
+              />
               <small className="small">Accepted formats: PDF, DOC, DOCX</small>
             </div>
           </div>
