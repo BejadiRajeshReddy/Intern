@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState } from "react";
 
 const App = () => {
   const ArrowDown = () => (
@@ -22,6 +23,18 @@ const App = () => {
       .querySelector("#apply-form")
       .scrollIntoView({ behavior: "smooth" });
   };
+
+
+  const [name, setName] = useState('');
+  const [subject, setSubject] = useState('TechSpira Internship Application');
+
+  const handleNameChange = (e) => {
+    const newName = e.target.value;
+    setName(newName);
+    setSubject(`TechSpira Internship Application from ${newName}`);
+  };
+
+
   const domains = [
     {
       name: "Full-Stack Development",
@@ -123,8 +136,8 @@ const App = () => {
           acceptCharset="UTF-8"
         >
           <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_subject" value="TechSpira Internship Application" />
-          
+          <input type="hidden" name="_subject" value={subject} />
+
           <div className="form-grid">
             <div className="form-group">
               <label className="label">Full Name</label>
@@ -133,6 +146,8 @@ const App = () => {
                 type="text"
                 name="name"
                 placeholder="Full Name"
+                value={name}
+                onChange={handleNameChange}
                 required
               />
             </div>
