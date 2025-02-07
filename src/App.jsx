@@ -158,7 +158,7 @@ const App = () => {
 
             <div className="form-group full-width">
               <label className="label">Resume</label>
-              <input className="input" type="file" name="attachment" accept=".pdf,.doc,.docx" required/>
+              <input className="input" type="file" name="Resume" accept=".pdf,.doc,.docx" required/>
               <small className="small">Accepted formats: PDF, DOC, DOCX</small>
             </div>
           </div>
